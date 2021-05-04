@@ -1275,7 +1275,8 @@ const moviesData = [
             "Ava Cooper"
         ],
         imdbRating: 7.3,
-        posterurl: "https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY500_CR0,0,337,500_AL_.jpg"
+        posterurl: "https://images-na.ssl-images-amazon.com/images/M/MV5BNjFhZjM4ZDYtMGRjYi00Yzc2LWExYmEtMDQ3NzA4ODU4YTljXkEyXkFqcGdeQXVyNjkwMzU3NDI@._V1_SY500_CR0,0,337,500_AL_.jpg",
+
     },
     {
         id: "24",
