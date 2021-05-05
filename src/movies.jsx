@@ -30,6 +30,7 @@ class Movies extends Component {
 
         return (
             <React.Fragment>
+                <p> {this.state.movies.length} movies are available in the database </p>
                 <table className='table'>
                     <thead>
                         <tr>
