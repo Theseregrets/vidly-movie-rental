@@ -6,7 +6,7 @@ import moviesData from './moviesData'
 class Movies extends Component {
     state = {
         movies: moviesData,
-        pageSize: 6,
+        pageSize: 6
     }
     handleDelete = movies => {
         const movie = this.state.movies.filter(m => m.id !== movies.id);
@@ -20,7 +20,7 @@ class Movies extends Component {
         this.setState({ movies: movie })
     }
 
-    handlePageChange = () => {
+    handlePageChange = page => {
         console.log('page change')
     }
 
@@ -49,14 +49,23 @@ class Movies extends Component {
                             <td>{movies.releaseDate}</td>
                             <td><img src={movies.posterurl} alt="" className='image' /></td>
                             <td>
-                                <Like liked={movies.liked} onClick={() => this.handleLike(movies)} />
+                                <Like liked={movies.liked}
+                                    onClick={() => this.handleLike(movies)} />
                             </td>
-                            <td><button onClick={() => this.handleDelete(movies)} className="btn btn-danger">delete</button></td>
+                            <td><button
+                                onClick={() => this.handleDelete(movies)}
+                                className="btn btn-danger">
+                                delete
+                                </button>
+                            </td>
                         </tr>)}
 
                     </tbody>
                 </table>
-                <Pagination pageSize={this.state.pageSize} itemsCount={this.state.movies.length} onPageChange={this.handlePageChange} />
+                <Pagination
+                    pageSize={this.state.pageSize}
+                    itemsCount={this.state.movies.length}
+                    onPageChange={this.handlePageChange} />
             </React.Fragment>
         );
     }
