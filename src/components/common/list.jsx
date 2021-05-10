@@ -1,22 +1,25 @@
 import React, { Component } from 'react'
 
+const List = (props) => {
 
+    const { genres, valueProperty, textProperty, onItemSelect, selectedItem } = props
+    console.log(selectedItem)
+    return (
+        <ul className="list-group">
+            {genres.map(item =>
+                <li
+                    key={item[valueProperty]}
+                    onClick={() => onItemSelect(item)}
+                    className={item === selectedItem ? "list-group-item active" : "list-group-item"}>
+                    {item[textProperty]}</li>
+            )}
+        </ul>
+    );
+}
 
-class List extends Component {
-
-    render() {
-        return (
-            <div className='list'>
-                <ul class="list-group">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                    <li class="list-group-item">A fourth item</li>
-                    <li class="list-group-item">And a fifth one</li>
-                </ul>
-            </div>
-        );
-    }
+List.defaultProps = {
+    textProperty: 'genre',
+    valueProperty: 'id'
 }
 
 export default List;
