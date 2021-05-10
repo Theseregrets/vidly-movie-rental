@@ -13,3 +13,11 @@ th{
 td {
   padding: 2rem;
 }
+
+.movies__main{
+  display: flex;
+  flex-direction: column;
+}
+.list{
+  flex: 0
+}
