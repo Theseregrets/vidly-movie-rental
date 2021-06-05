@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+.image {
+  width: 150px;
+  height: 250px;
+}
+th{
+  padding:1rem 2rem;
+}
+
+td {
+  padding: 2rem;
+}
+
+.row{
+  margin: 25px;
+}
