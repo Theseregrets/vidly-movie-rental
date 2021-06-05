@@ -6,6 +6,7 @@ import List from "./common/list";
 import moviesData from "../moviesData";
 import { paginate } from "../utils/paginate";
 import genresData from "../genresData";
+import { Route } from "react-router";
 
 class Movies extends Component {
   state = {
