@@ -1,9 +1,3 @@
-# vidly movie rental app
-
-![Screenshot (69)](https://user-images.githubusercontent.com/75828535/117623536-8da97780-b191-11eb-8c29-159b4a1fbfde.png)
-
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
