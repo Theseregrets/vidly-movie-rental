@@ -77,7 +77,7 @@ class Movies extends Component {
             <p> {filtered.length} movies are available in the database </p>
 
             <MoviesTable
-              movies={allMovies}
+              movies={movies}
               onLike={this.handleLike}
               onDelete={this.handleDelete}
               onSort={this.handleSort}
