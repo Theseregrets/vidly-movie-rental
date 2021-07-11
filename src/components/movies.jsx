@@ -6,6 +6,7 @@ import List from "./common/list";
 import moviesData from "../moviesData";
 import { paginate } from "../utils/paginate";
 import genresData from "../genresData";
+import { Route } from "react-router";
 
 class Movies extends Component {
   state = {
@@ -15,7 +16,7 @@ class Movies extends Component {
     genres: [],
   };
   componentDidMount() {
-    const genres = [{ name: "All Genres" }, ...genresData];
+    const genres = [{ genre: "All Genres" }, ...genresData];
     this.setState({ movies: moviesData, genres });
   }
 
@@ -76,7 +77,7 @@ class Movies extends Component {
             <p> {filtered.length} movies are available in the database </p>
 
             <MoviesTable
-              movies={allMovies}
+              movies={movies}
               onLike={this.handleLike}
               onDelete={this.handleDelete}
               onSort={this.handleSort}
